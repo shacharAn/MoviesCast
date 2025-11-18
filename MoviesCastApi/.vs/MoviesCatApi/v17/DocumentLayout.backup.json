@@ -1,30 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\\u05DE\u05D8\u05DC\u05D4 1\\MoviesCastApi\\",
+  "WorkspaceRootPath": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\MoviesCast\\MoviesCastApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|c:\\users\\shach\\desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\\u05DE\u05D8\u05DC\u05D4 1\\moviescastapi\\controllers\\castscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|solutionrelative:controllers\\castscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|c:\\users\\shach\\desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\\u05DE\u05D8\u05DC\u05D4 1\\moviescastapi\\models\\cast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|solutionrelative:models\\cast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|c:\\users\\shach\\desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\\u05DE\u05D8\u05DC\u05D4 1\\moviescastapi\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|c:\\users\\shach\\desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\moviescast\\moviescastapi\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|solutionrelative:controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|c:\\users\\shach\\desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\\u05DE\u05D8\u05DC\u05D4 1\\moviescastapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|c:\\users\\shach\\desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\moviescast\\moviescastapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|c:\\users\\shach\\desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\moviescast\\moviescastapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|c:\\users\\shach\\desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\\u05DE\u05D8\u05DC\u05D4 1\\moviescastapi\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|c:\\users\\shach\\desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\moviescast\\moviescastapi\\controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|solutionrelative:controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|c:\\users\\shach\\desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\moviescast\\moviescastapi\\models\\cast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|solutionrelative:models\\cast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|c:\\users\\shach\\desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\moviescast\\moviescastapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|c:\\users\\shach\\desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\moviescast\\moviescastapi\\models\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|solutionrelative:models\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|c:\\users\\shach\\desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\moviescast\\moviescastapi\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|solutionrelative:models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|c:\\users\\shach\\desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\\u05DE\u05D8\u05DC\u05D4 1\\moviescastapi\\controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|solutionrelative:controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|c:\\users\\shach\\desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\moviescast\\moviescastapi\\controllers\\castscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F924F8-FB8B-47D9-8CBB-779119D43126}|MoviesCastApi.csproj|solutionrelative:controllers\\castscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,107 +46,117 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WishListController.cs",
-              "DocumentMoniker": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\\u05DE\u05D8\u05DC\u05D4 1\\MoviesCastApi\\Controllers\\WishListController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WishListController.cs",
-              "ToolTip": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\\u05DE\u05D8\u05DC\u05D4 1\\MoviesCastApi\\Controllers\\WishListController.cs",
-              "RelativeToolTip": "Controllers\\WishListController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T11:25:03.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Movie.cs",
-              "DocumentMoniker": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\\u05DE\u05D8\u05DC\u05D4 1\\MoviesCastApi\\Models\\Movie.cs",
-              "RelativeDocumentMoniker": "Models\\Movie.cs",
-              "ToolTip": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\\u05DE\u05D8\u05DC\u05D4 1\\MoviesCastApi\\Models\\Movie.cs",
-              "RelativeToolTip": "Models\\Movie.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAADcAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T07:34:39.835Z",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\MoviesCast\\MoviesCastApi\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\MoviesCast\\MoviesCastApi\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-18T12:09:03.55Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\\u05DE\u05D8\u05DC\u05D4 1\\MoviesCastApi\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\\u05DE\u05D8\u05DC\u05D4 1\\MoviesCastApi\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Title": "WishListController.cs",
+              "DocumentMoniker": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\MoviesCast\\MoviesCastApi\\Controllers\\WishListController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WishListController.cs",
+              "ToolTip": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\MoviesCast\\MoviesCastApi\\Controllers\\WishListController.cs",
+              "RelativeToolTip": "Controllers\\WishListController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T08:13:27.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-11T11:25:03.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Cast.cs",
+              "DocumentMoniker": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\MoviesCast\\MoviesCastApi\\Models\\Cast.cs",
+              "RelativeDocumentMoniker": "Models\\Cast.cs",
+              "ToolTip": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\MoviesCast\\MoviesCastApi\\Models\\Cast.cs",
+              "RelativeToolTip": "Models\\Cast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T07:36:05.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\MoviesCast\\MoviesCastApi\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\MoviesCast\\MoviesCastApi\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAADwvwsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T10:59:58.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Dal.cs",
+              "DocumentMoniker": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\MoviesCast\\MoviesCastApi\\Models\\Dal.cs",
+              "RelativeDocumentMoniker": "Models\\Dal.cs",
+              "ToolTip": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\MoviesCast\\MoviesCastApi\\Models\\Dal.cs",
+              "RelativeToolTip": "Models\\Dal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T11:01:44.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Movie.cs",
+              "DocumentMoniker": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\MoviesCast\\MoviesCastApi\\Models\\Movie.cs",
+              "RelativeDocumentMoniker": "Models\\Movie.cs",
+              "ToolTip": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\MoviesCast\\MoviesCastApi\\Models\\Movie.cs",
+              "RelativeToolTip": "Models\\Movie.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwAIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T11:16:45.518Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\MoviesCast\\MoviesCastApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\MoviesCast\\MoviesCastApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T08:13:27.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "MoviesController.cs",
-              "DocumentMoniker": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\\u05DE\u05D8\u05DC\u05D4 1\\MoviesCastApi\\Controllers\\MoviesController.cs",
+              "DocumentMoniker": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\MoviesCast\\MoviesCastApi\\Controllers\\MoviesController.cs",
               "RelativeDocumentMoniker": "Controllers\\MoviesController.cs",
-              "ToolTip": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\\u05DE\u05D8\u05DC\u05D4 1\\MoviesCastApi\\Controllers\\MoviesController.cs",
+              "ToolTip": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\MoviesCast\\MoviesCastApi\\Controllers\\MoviesController.cs",
               "RelativeToolTip": "Controllers\\MoviesController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAA+wAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-29T07:39:39.505Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Cast.cs",
-              "DocumentMoniker": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\\u05DE\u05D8\u05DC\u05D4 1\\MoviesCastApi\\Models\\Cast.cs",
-              "RelativeDocumentMoniker": "Models\\Cast.cs",
-              "ToolTip": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\\u05DE\u05D8\u05DC\u05D4 1\\MoviesCastApi\\Models\\Cast.cs",
-              "RelativeToolTip": "Models\\Cast.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T07:36:05.064Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "CastsController.cs",
-              "DocumentMoniker": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\\u05DE\u05D8\u05DC\u05D4 1\\MoviesCastApi\\Controllers\\CastsController.cs",
+              "DocumentMoniker": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\MoviesCast\\MoviesCastApi\\Controllers\\CastsController.cs",
               "RelativeDocumentMoniker": "Controllers\\CastsController.cs",
-              "ToolTip": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\\u05DE\u05D8\u05DC\u05D4 1\\MoviesCastApi\\Controllers\\CastsController.cs",
+              "ToolTip": "C:\\Users\\shach\\Desktop\\\u05E2\u05D1\u05D5\u05D3\u05D5\u05EA \u05E9\u05E0\u05D4 \u05D2\\\u05E6\u05D3 \u05E9\u05E8\u05EA\\MoviesCast\\MoviesCastApi\\Controllers\\CastsController.cs",
               "RelativeToolTip": "Controllers\\CastsController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T07:59:11.183Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 69,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "WhenOpened": "2025-10-29T07:59:11.183Z"
             }
           ]
         }

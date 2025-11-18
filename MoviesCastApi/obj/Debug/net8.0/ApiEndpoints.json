@@ -150,7 +150,39 @@
     ]
   },
   {
-    "ContainingType": "WishListController",
+    "ContainingType": "MoviesCastApi.Controllers.UsersController",
+    "Method": "Login",
+    "RelativePath": "api/Users/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MoviesCastApi.Controllers.UsersController\u002BLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MoviesCastApi.Controllers.UsersController",
+    "Method": "Register",
+    "RelativePath": "api/Users/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MoviesCastApi.Controllers.UsersController\u002BRegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MoviesCastApi.Controllers.WishListController",
     "Method": "Get",
     "RelativePath": "api/WishList",
     "HttpMethod": "GET",
@@ -170,7 +202,7 @@
     ]
   },
   {
-    "ContainingType": "WishListController",
+    "ContainingType": "MoviesCastApi.Controllers.WishListController",
     "Method": "Add",
     "RelativePath": "api/WishList",
     "HttpMethod": "POST",
@@ -179,7 +211,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "WishListController\u002BAddWishDto",
+        "Type": "MoviesCastApi.Controllers.WishListController\u002BAddWishDto",
         "IsRequired": true
       }
     ],

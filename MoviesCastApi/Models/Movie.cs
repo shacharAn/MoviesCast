@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using System.Linq;
 using System.Data.SqlClient;
 
 namespace MoviesCastApi.Models
@@ -142,6 +143,23 @@ namespace MoviesCastApi.Models
             }
 
             return list;
+        }
+        private static readonly List<Movie> WishList = new List<Movie>();
+
+        public static bool AddToWishList(int id)
+        {
+            var all = Read();
+            var movie = all.FirstOrDefault(m => m.Id == id);
+            if (movie == null) return false;              // אין סרט כזה
+            if (WishList.Any(m => m.Id == id)) return false; // כבר קיים ב-WishList
+
+            WishList.Add(movie);
+            return true;
+        }
+
+        public static List<Movie> ReadWishList()
+        {
+            return WishList;
         }
     }
 }

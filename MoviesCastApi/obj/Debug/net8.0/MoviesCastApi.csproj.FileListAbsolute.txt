@@ -107,3 +107,47 @@ C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\מטלה 1\MoviesCastA
 C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\מטלה 1\MoviesCastApi\obj\Debug\net8.0\MoviesCastApi.pdb
 C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\מטלה 1\MoviesCastApi\obj\Debug\net8.0\MoviesCastApi.genruntimeconfig.cache
 C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\מטלה 1\MoviesCastApi\obj\Debug\net8.0\ref\MoviesCastApi.dll
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\MoviesCastApi.csproj.AssemblyReference.cache
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\MoviesCastApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\MoviesCastApi.AssemblyInfoInputs.cache
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\MoviesCastApi.AssemblyInfo.cs
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\MoviesCastApi.csproj.CoreCompileInputs.cache
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\MoviesCastApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\MoviesCastApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\MoviesCastApi.sourcelink.json
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\MoviesCastApi.dll
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\refint\MoviesCastApi.dll
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\MoviesCastApi.pdb
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\bin\Debug\net8.0\MoviesCastApi.staticwebassets.endpoints.json
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\bin\Debug\net8.0\appsettings.json
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\bin\Debug\net8.0\libman.json
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\bin\Debug\net8.0\MoviesCastApi.exe
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\bin\Debug\net8.0\MoviesCastApi.deps.json
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\bin\Debug\net8.0\MoviesCastApi.runtimeconfig.json
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\bin\Debug\net8.0\MoviesCastApi.dll
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\bin\Debug\net8.0\MoviesCastApi.pdb
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\scopedcss\bundle\MoviesCastApi.styles.css
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\staticwebassets\msbuild.MoviesCastApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\staticwebassets\msbuild.MoviesCastApi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\staticwebassets\msbuild.build.MoviesCastApi.props
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MoviesCastApi.props
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MoviesCastApi.props
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\MoviesCa.6A518CDD.Up2Date
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\MoviesCastApi.genruntimeconfig.cache
+C:\Users\shach\Desktop\עבודות שנה ג\צד שרת\MoviesCast\MoviesCastApi\obj\Debug\net8.0\ref\MoviesCastApi.dll

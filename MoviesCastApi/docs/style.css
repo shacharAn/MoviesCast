@@ -1,0 +1,177 @@
+body {
+  font-family: Arial, sans-serif;
+  background:#faf8f6;
+  direction: rtl;
+  margin:20px;
+}
+
+h1 {
+  text-align:center;
+}
+
+.tabs {
+  text-align:center;
+  margin: 10px 0 20px;
+}
+
+.tabs button {
+  margin: 0 6px;
+  padding: 8px 14px;
+  cursor:pointer;
+}
+
+.tabs-user {
+  margin-right:20px;
+}
+
+.page {
+  display:none;
+}
+
+.page.active {
+  display:block;
+}
+
+.movie-grid {
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+  justify-content:center;
+}
+
+.movie-card {
+  width:230px;
+  background:#fff;
+  border-radius:10px;
+  box-shadow:0 2px 6px rgba(0,0,0,.12);
+  overflow:hidden;
+}
+
+.movie-card img {
+  width:100%;
+  height:300px;
+  object-fit:cover;
+}
+
+.movie-card .info {
+  padding:10px;
+}
+
+.movie-card .info h3 {
+  margin:0 0 6px;
+  font-size:16px;
+}
+
+.movie-card .info p {
+  margin:4px 0;
+  color:#555;
+  font-size:13px;
+}
+
+.movie-card .info button {
+  margin-top:8px;
+  width:100%;
+  padding:6px;
+  cursor:pointer;
+}
+
+.section-filters {
+  text-align:center;
+  margin: 6px 0 16px;
+}
+
+.section-wish-actions {
+  text-align:center;
+  margin-bottom:10px;
+}
+
+.section-cast-header {
+  margin:12px 0;
+}
+
+.cast-wrap {
+  max-width:900px;
+  margin:0 auto;
+}
+
+.cast-form {
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 2px 6px rgba(0,0,0,.12);
+  padding:16px;
+  margin-bottom:18px;
+}
+
+.cast-form h3 {
+  margin:0 0 10px;
+}
+
+.form-row {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:12px;
+}
+
+.form-row .field {
+  display:flex;
+  flex-direction:column;
+}
+
+.field label {
+  font-size:13px;
+  color:#444;
+  margin-bottom:4px;
+}
+
+.field input {
+  padding:8px;
+  border:1px solid #ddd;
+  border-radius:8px;
+}
+
+.err {
+  color:#b00020;
+  font-size:12px;
+  min-height:16px;
+}
+
+.cast-form .actions {
+  text-align:left;
+  margin-top:8px;
+}
+
+.cast-form button {
+  padding:8px 12px;
+}
+
+.modal-box {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:rgba(0,0,0,0.4);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.modal-content {
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  width:300px;
+  box-shadow:0 2px 6px rgba(0,0,0,.3);
+}
+
+.modal-content input {
+  width:100%;
+  padding:8px;
+  margin-bottom:10px;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+
+.modal-content button {
+  margin-top:6px;
+}

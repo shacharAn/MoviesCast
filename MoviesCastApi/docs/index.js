@@ -2,7 +2,7 @@ function showTab(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   if (name === 'all') {
     document.getElementById('page-all').classList.add('active');
-    loadMoviesFromFile(); // רענון לפי הצורך
+    loadMoviesFromFile(); 
   } else if (name === 'wish') {
     document.getElementById('page-wish').classList.add('active');
     loadWishList();
@@ -33,6 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     submitCastForm();
   });
+    const movieForm = document.getElementById('movieForm');
+  if (movieForm) {
+    movieForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      submitMovieForm();
+    });
+  }
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
@@ -42,4 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   loadMoviesFromFile();
+  document.getElementById("btnShowLogin").addEventListener("click", showLogin);
+  document.getElementById("btnShowRegister").addEventListener("click", showRegister);
+  document.getElementById("btnDoLogin").addEventListener("click", doLogin);
+  document.getElementById("btnDoRegister").addEventListener("click", doRegister);
+  document.getElementById("btnLogout").addEventListener("click", logoutUser);
+
+  updateUserStatus();
 });

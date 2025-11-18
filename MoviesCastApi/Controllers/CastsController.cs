@@ -8,21 +8,31 @@ namespace MoviesCastApi.Controllers
     public class CastsController : ControllerBase
     {
         [HttpGet]
-        public ActionResult<List<Cast>> GetAll() => Ok(Cast.Read());
+        public ActionResult<List<Cast>> GetAll()
+        {
+            return Ok(Cast.Read());
+        }
 
         [HttpGet("{id}")]
         public ActionResult<Cast> Get(int id)
         {
-            var c = Cast.Casts.FirstOrDefault(x => x.Id == id);
-            return c == null ? NotFound() : Ok(c);
+            var list = Cast.Read();
+            var c = list.FirstOrDefault(x => x.Id == id);
+
+            if (c == null) return NotFound();
+            return Ok(c);
         }
 
         [HttpPost]
         public ActionResult Create([FromBody] Cast cast)
         {
-            if (cast == null) return BadRequest("Cast payload is required.");
+            if (cast == null)
+                return BadRequest("Cast payload is required.");
+
             var ok = cast.Insert();
-            if (!ok) return Conflict($"Cast with Id {cast.Id} already exists.");
+            if (!ok)
+                return Conflict($"Could not insert cast record.");
+
             return Created($"/api/casts/{cast.Id}", cast);
         }
     }

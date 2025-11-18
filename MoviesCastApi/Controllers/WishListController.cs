@@ -1,20 +1,24 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MoviesCastApi.Models;
 
-[Route("api/[controller]")]
-[ApiController]
-public class WishListController : ControllerBase
+namespace MoviesCastApi.Controllers
 {
-    [HttpGet] public ActionResult<List<Movie>> Get() => Ok(Movie.ReadWishList());
-
-    public class AddWishDto { public int Id { get; set; } }
-
-    [HttpPost]
-    public ActionResult Add([FromBody] AddWishDto dto)
+    [Route("api/[controller]")]
+    [ApiController]
+    public class WishListController : ControllerBase
     {
-        if (dto == null) return BadRequest("Payload is required.");
-        var added = Movie.AddToWishList(dto.Id);
-        if (!added) return Conflict("Movie not found or already in wish list.");
-        return Created($"/api/wishlist/{dto.Id}", new { dto.Id });
+        [HttpGet]
+        public ActionResult<List<Movie>> Get() => Ok(Movie.ReadWishList());
+
+        public class AddWishDto { public int Id { get; set; } }
+
+        [HttpPost]
+        public ActionResult Add([FromBody] AddWishDto dto)
+        {
+            if (dto == null) return BadRequest("Payload is required.");
+            var added = Movie.AddToWishList(dto.Id);
+            if (!added) return Conflict("Movie not found or already in wish list.");
+            return Created($"/api/wishlist/{dto.Id}", new { dto.Id });
+        }
     }
 }
