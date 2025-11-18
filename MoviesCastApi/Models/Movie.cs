@@ -1,64 +1,147 @@
-﻿using System.Linq;
+﻿using System.Data;
+using System.Data.SqlClient;
+
 namespace MoviesCastApi.Models
 {
     public class Movie
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public double Rating { get; set; }       
-        public double Income { get; set; }       
-        public int ReleaseYear { get; set; }     
-        public int Duration { get; set; }        
+        public double Rating { get; set; }
+        public double Income { get; set; }
+        public int ReleaseYear { get; set; }
+        public int Duration { get; set; }
         public string Language { get; set; }
         public string Description { get; set; }
         public string Genre { get; set; }
         public string PhotoUrl { get; set; }
-        public static List<Movie> MoviesList = new List<Movie>();
 
-        public bool Insert()
-        {
-            if (MoviesList.Any(m => m.Id == this.Id))
-                return false;
-
-            MoviesList.Add(this);
-            return true;
-        }
+        
         public static List<Movie> Read()
         {
-            return MoviesList;
+            var list = new List<Movie>();
+
+            using var conn = Dal.GetConnection();
+            using var cmd = new SqlCommand("sp_GetAllMovies", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            conn.Open();
+            using var rdr = cmd.ExecuteReader();
+
+            while (rdr.Read())
+            {
+                list.Add(new Movie
+                {
+                    Id = rdr.GetInt32(0),
+                    Title = rdr.GetString(1),
+                    Rating = rdr.GetDouble(2),
+                    Income = rdr.GetInt64(3),
+                    ReleaseYear = rdr.GetInt32(4),
+                    Duration = rdr.GetInt32(5),
+                    Language = rdr.GetString(6),
+                    Description = rdr.GetString(7),
+                    Genre = rdr.GetString(8),
+                    PhotoUrl = rdr.GetString(9)
+                });
+            }
+
+            return list;
         }
+
+        
+        public bool Insert()
+        {
+            using var conn = Dal.GetConnection();
+            using var cmd = new SqlCommand("sp_InsertMovie", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@Title", Title);
+            cmd.Parameters.AddWithValue("@Rating", Rating);
+            cmd.Parameters.AddWithValue("@Income", Income);
+            cmd.Parameters.AddWithValue("@ReleaseYear", ReleaseYear);
+            cmd.Parameters.AddWithValue("@Duration", Duration);
+            cmd.Parameters.AddWithValue("@Language", Language);
+            cmd.Parameters.AddWithValue("@Description", Description);
+            cmd.Parameters.AddWithValue("@Genre", Genre);
+            cmd.Parameters.AddWithValue("@PhotoUrl", PhotoUrl);
+
+            conn.Open();
+            using var rdr = cmd.ExecuteReader();
+
+            if (rdr.Read())
+            {
+                Id = rdr.GetInt32(0);
+                return true;
+            }
+
+            return false;
+        }
+
+        
         public static List<Movie> ReadByRating(double minRating)
         {
-            List<Movie> filtered = new List<Movie>();
-            foreach (var movie in MoviesList)
+            var list = new List<Movie>();
+
+            using var conn = Dal.GetConnection();
+            using var cmd = new SqlCommand("sp_GetMoviesByRating", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@MinRating", minRating);
+
+            conn.Open();
+            using var rdr = cmd.ExecuteReader();
+
+            while (rdr.Read())
             {
-                if (movie.Rating >= minRating)
-                    filtered.Add(movie);
+                list.Add(new Movie
+                {
+                    Id = rdr.GetInt32(0),
+                    Title = rdr.GetString(1),
+                    Rating = rdr.GetDouble(2),
+                    Income = rdr.GetInt64(3),
+                    ReleaseYear = rdr.GetInt32(4),
+                    Duration = rdr.GetInt32(5),
+                    Language = rdr.GetString(6),
+                    Description = rdr.GetString(7),
+                    Genre = rdr.GetString(8),
+                    PhotoUrl = rdr.GetString(9)
+                });
             }
-            return filtered;
+
+            return list;
         }
+
         public static List<Movie> ReadByDuration(int maxDuration)
         {
-            List<Movie> filtered = new List<Movie>();
-            foreach (var movie in MoviesList)
+            var list = new List<Movie>();
+
+            using var conn = Dal.GetConnection();
+            using var cmd = new SqlCommand("sp_GetMoviesByDuration", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@MaxDuration", maxDuration);
+
+            conn.Open();
+            using var rdr = cmd.ExecuteReader();
+
+            while (rdr.Read())
             {
-                if (movie.Duration <= maxDuration)
-                    filtered.Add(movie);
+                list.Add(new Movie
+                {
+                    Id = rdr.GetInt32(0),
+                    Title = rdr.GetString(1),
+                    Rating = rdr.GetDouble(2),
+                    Income = rdr.GetInt64(3),
+                    ReleaseYear = rdr.GetInt32(4),
+                    Duration = rdr.GetInt32(5),
+                    Language = rdr.GetString(6),
+                    Description = rdr.GetString(7),
+                    Genre = rdr.GetString(8),
+                    PhotoUrl = rdr.GetString(9)
+                });
             }
-            return filtered;
+
+            return list;
         }
-        public static List<Movie> WishList { get; } = new List<Movie>();
-
-        public static bool AddToWishList(int id)
-        {
-            var movie = MoviesList.FirstOrDefault(m => m.Id == id);
-            if (movie == null) return false;                
-            if (WishList.Any(m => m.Id == id)) return false; 
-            WishList.Add(movie);
-            return true;
-        }
-
-        public static List<Movie> ReadWishList() => WishList;
-
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shach\\Desktop\\עבודות שנה ג\\צד שרת\\מטלה 1\\MoviesCastApi\\MoviesCastApi.csproj": {}
+    "C:\\Users\\shach\\Desktop\\עבודות שנה ג\\צד שרת\\MoviesCast\\MoviesCastApi\\MoviesCastApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shach\\Desktop\\עבודות שנה ג\\צד שרת\\מטלה 1\\MoviesCastApi\\MoviesCastApi.csproj": {
+    "C:\\Users\\shach\\Desktop\\עבודות שנה ג\\צד שרת\\MoviesCast\\MoviesCastApi\\MoviesCastApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shach\\Desktop\\עבודות שנה ג\\צד שרת\\מטלה 1\\MoviesCastApi\\MoviesCastApi.csproj",
+        "projectUniqueName": "C:\\Users\\shach\\Desktop\\עבודות שנה ג\\צד שרת\\MoviesCast\\MoviesCastApi\\MoviesCastApi.csproj",
         "projectName": "MoviesCastApi",
-        "projectPath": "C:\\Users\\shach\\Desktop\\עבודות שנה ג\\צד שרת\\מטלה 1\\MoviesCastApi\\MoviesCastApi.csproj",
+        "projectPath": "C:\\Users\\shach\\Desktop\\עבודות שנה ג\\צד שרת\\MoviesCast\\MoviesCastApi\\MoviesCastApi.csproj",
         "packagesPath": "C:\\Users\\shach\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shach\\Desktop\\עבודות שנה ג\\צד שרת\\מטלה 1\\MoviesCastApi\\obj\\",
+        "outputPath": "C:\\Users\\shach\\Desktop\\עבודות שנה ג\\צד שרת\\MoviesCast\\MoviesCastApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

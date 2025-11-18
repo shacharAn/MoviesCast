@@ -13,13 +13,15 @@ namespace MoviesCastApi
             {
                 options.AddPolicy("AllowAll", p =>
                     p.AllowAnyOrigin()
-                     .AllowAnyHeader()
-                     .AllowAnyMethod());
+                    .AllowAnyHeader()
+                    .AllowAnyMethod());
             });
 
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            MoviesCastApi.Models.Dal.Init(builder.Configuration);
 
             var app = builder.Build();
 
