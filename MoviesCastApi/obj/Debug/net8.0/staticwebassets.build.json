@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "wLyQYhKSB+GuGRkYTOgQDX3RCSTh2QsmSNd5DjGSH20=",
+  "Source": "MoviesCastApi",
+  "BasePath": "_content/MoviesCastApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
