@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <title>🎬 Movies App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: Arial; background:#faf8f6; direction: rtl; margin:20px; }
+    h1 { text-align:center; }
+    .tabs { text-align:center; margin: 10px 0 20px; }
+    .tabs button { margin: 0 6px; padding: 8px 14px; cursor:pointer; }
+    .movie-grid { display:flex; flex-wrap:wrap; gap:16px; justify-content:center; }
+    .movie-card { width:230px; background:#fff; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,.12); overflow:hidden; }
+    .movie-card img { width:100%; height:300px; object-fit:cover; }
+    .movie-card .info { padding:10px; }
+    .movie-card .info h3 { margin:0 0 6px; font-size:16px; }
+    .movie-card .info p { margin:4px 0; color:#555; font-size:13px; }
+    .movie-card .info button { margin-top:8px; width:100%; padding:6px; cursor:pointer; }
+    .page { display:none; }
+    .page.active { display:block; }
+
+    .cast-wrap { max-width:900px; margin:0 auto; }
+    .cast-form { background:#fff; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,.12); padding:16px; margin-bottom:18px; }
+    .cast-form h3 { margin:0 0 10px; }
+    .form-row { display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; }
+    .form-row .field { display:flex; flex-direction:column; }
+    .field label { font-size:13px; color:#444; margin-bottom:4px; }
+    .field input { padding:8px; border:1px solid #ddd; border-radius:8px; }
+    .err { color:#b00020; font-size:12px; min-height:16px; }
+    .cast-form .actions { text-align:left; margin-top:8px; }
+    .cast-form button { padding:8px 12px; }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <h1>🎬 Movies App</h1>
+
+  <div class="tabs">
+    <button id="btnTabAll">📽️ כל הסרטים</button>
+    <button id="btnTabWish">💖 ה-Wish List</button>
+    <button id="btnTabCast">🎭 צוות השחקנים (Cast)</button>
+  </div>
+
+  <section id="page-all" class="page active">
+    <div style="text-align:center; margin: 6px 0 16px;">
+      <label>דירוג מינימלי: </label>
+      <input id="ratingInput" type="number" min="0" max="10" step="0.1" style="width:90px">
+      <button id="btnFilterRating">סנן לפי דירוג</button>
+      &nbsp;&nbsp;&nbsp;
+      <label>משך מקסימלי (דקות): </label>
+      <input id="durationInput" type="number" min="1" step="1" style="width:90px">
+      <button id="btnFilterDuration">סנן לפי משך</button>
+    </div>
+
+    <div id="all-movies" class="movie-grid">טוען סרטים...</div>
+  </section>
+
+  <section id="page-wish" class="page">
+    <div style="text-align:center; margin-bottom:10px;">
+      <button id="btnWishRefresh">רענן Wish List</button>
+    </div>
+    <div id="wish-movies" class="movie-grid">עדיין אין מועדפים…</div>
+  </section>
+
+  <section id="page-cast" class="page">
+    <div class="cast-wrap">
+      <form id="castForm" class="cast-form" novalidate>
+        <h3>הוספת שחקן (Cast)</h3>
+        <div class="form-row">
+          <div class="field">
+            <label for="castId">מזהה (Id) *</label>
+            <input id="castId" name="castId" type="number" min="1" required />
+            <div class="err" id="errId"></div>
+          </div>
+          <div class="field">
+            <label for="castName">שם מלא *</label>
+            <input id="castName" name="castName" type="text" minlength="2" maxlength="50" required />
+            <div class="err" id="errName"></div>
+          </div>
+          <div class="field">
+            <label for="castRole">תפקיד (Role) *</label>
+            <input id="castRole" name="castRole" type="text" minlength="2" maxlength="40" required />
+            <div class="err" id="errRole"></div>
+          </div>
+          <div class="field">
+            <label for="castAge">גיל</label>
+            <input id="castAge" name="castAge" type="number" min="0" max="120" />
+            <div class="err" id="errAge"></div>
+          </div>
+          <div class="field">
+            <label for="castMovieId">מזהה סרט (MovieId)</label>
+            <input id="castMovieId" name="castMovieId" type="number" min="1" />
+            <div class="err" id="errMovieId"></div>
+          </div>
+          <div class="field">
+            <label for="castPhoto">תמונת שחקן (PhotoUrl)</label>
+            <input id="castPhoto" name="castPhoto" type="url" placeholder="https://..." />
+            <div class="err" id="errPhoto"></div>
+          </div>
+        </div>
+        <div class="actions">
+          <button type="submit" id="btnCastSubmit">הוסף שחקן</button>
+        </div>
+      </form>
+
+      <h3 style="margin:12px 0;">רשימת שחקנים קיימת</h3>
+      <div id="cast-list" class="movie-grid">טוען שחקנים...</div>
+    </div>
+  </section>
+
+  <script src="functions.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
