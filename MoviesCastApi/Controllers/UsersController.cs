@@ -32,7 +32,7 @@ namespace MoviesCastApi.Controllers
                 return BadRequest("All fields are required.");
             }
 
-            var user = new User
+            var user = new MoviesCastApi.Models.User
             {
                 UserName = dto.UserName.Trim(),
                 Email    = dto.Email.Trim(),
@@ -63,7 +63,7 @@ namespace MoviesCastApi.Controllers
                 return BadRequest("Email and password are required.");
             }
 
-            var user = User.Login(dto.Email.Trim(), dto.Password);
+            var user = MoviesCastApi.Models.User.Login(dto.Email, dto.Password);
             if (user == null)
             {
                 return Unauthorized("Invalid email or password.");
