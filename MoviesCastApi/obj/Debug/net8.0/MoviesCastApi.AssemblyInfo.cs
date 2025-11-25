@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MoviesCastApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b212de237ac946f97b5bef6d927b05e4534b8cea")]
 [assembly: System.Reflection.AssemblyProductAttribute("MoviesCastApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MoviesCastApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
