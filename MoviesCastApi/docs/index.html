@@ -13,8 +13,8 @@
 
   <div class="tabs">
     <button id="btnTabAll"> כל הסרטים</button>
-    <button id="btnTabWish"> ה-Wish List</button>
-    <button id="btnTabCast"> צוות השחקנים (Cast)</button>
+    <button id="btnTabWish">Wish List</button>
+    <button id="btnTabCast"> צוות השחקנים </button>
     <span class="tabs-user">
     <span id="userStatus" style="font-weight:bold; color:#444;"></span>
     <button id="btnShowLogin"> התחברות</button>
@@ -51,7 +51,7 @@
         </div>
 
         <div class="field">
-          <label for="movieIncome">הכנסות (מספר)</label>
+          <label for="movieIncome">הכנסות </label>
           <input id="movieIncome" type="number" />
           <span id="errMovieIncome" class="err"></span>
         </div>
@@ -114,43 +114,44 @@
   <section id="page-cast" class="page">
     <div class="cast-wrap">
       <form id="castForm" class="cast-form" novalidate>
-        <h3>הוספת שחקן (Cast)</h3>
+        <h3>הוספת שחקן </h3>
         <div class="form-row">
-          <div class="field">
-            <label for="castId">מזהה (Id) *</label>
-            <input id="castId" name="castId" type="number" min="1" required />
-            <div class="err" id="errId"></div>
-          </div>
           <div class="field">
             <label for="castName">שם מלא *</label>
             <input id="castName" name="castName" type="text" minlength="2" maxlength="50" required />
             <div class="err" id="errName"></div>
           </div>
+
           <div class="field">
-            <label for="castRole">תפקיד (Role) *</label>
-            <input id="castRole" name="castRole" type="text" minlength="2" maxlength="40" required />
+            <label for="castRole">תפקיד</label>
+            <input id="castRole" name="castRole" type="text" minlength="2" maxlength="50" />
             <div class="err" id="errRole"></div>
           </div>
+
           <div class="field">
-            <label for="castAge">גיל</label>
-            <input id="castAge" name="castAge" type="number" min="0" max="120" />
-            <div class="err" id="errAge"></div>
+            <label for="castDateOfBirth">תאריך לידה</label>
+            <input id="castDateOfBirth" name="castDateOfBirth" type="date" />
+            <div class="err" id="errDob"></div>
           </div>
+
           <div class="field">
-            <label for="castMovieId">מזהה סרט (MovieId)</label>
-            <input id="castMovieId" name="castMovieId" type="number" min="1" />
-            <div class="err" id="errMovieId"></div>
+            <label for="castCountry">מדינה</label>
+            <input id="castCountry" name="castCountry" type="text" minlength="2" maxlength="50" />
+            <div class="err" id="errCountry"></div>
           </div>
+
           <div class="field">
             <label for="castPhoto">תמונת שחקן (PhotoUrl)</label>
             <input id="castPhoto" name="castPhoto" type="url" placeholder="https://..." />
             <div class="err" id="errPhoto"></div>
           </div>
         </div>
+
         <div class="actions">
           <button type="submit" id="btnCastSubmit">הוסף שחקן</button>
         </div>
       </form>
+
 
       <h3 class="section-cast-header">רשימת שחקנים קיימת</h3>
       <div id="cast-list" class="movie-grid">טוען שחקנים...</div>

@@ -67,29 +67,29 @@ async function loadMoviesFromFile() {
     renderInto("all-movies", moviesFromDb, /*withAddButton*/ true);
   } catch (err) {
     console.error("שגיאה בטעינת הסרטים", err);
-    $("#all-movies").html("<p> שגיאה בטעינת הסרטים</p>");
+    $("#all-movies").html("<p>⚠️ שגיאה בטעינת הסרטים</p>");
   }
 }
 
 
-async function seedMoviesOnServer(movies) {
-  for (const m of movies) {
-    try {
-      await $.ajax({
-        type: "POST",
-        url: apiMovies,
-        contentType: "application/json",
-        data: JSON.stringify({
-          id: m.id, title: m.title, rating: m.rating, income: m.income,
-          releaseYear: m.releaseYear, duration: m.duration, language: m.language,
-          description: m.description, genre: m.genre, photoUrl: m.photoUrl
-        })
-      });
-    } catch (xhr) {
-      if (xhr.status !== 409) console.warn("seed error:", xhr);
-    }
-  }
-}
+// async function seedMoviesOnServer(movies) {
+//   for (const m of movies) {
+//     try {
+//       await $.ajax({
+//         type: "POST",
+//         url: apiMovies,
+//         contentType: "application/json",
+//         data: JSON.stringify({
+//           id: m.id, title: m.title, rating: m.rating, income: m.income,
+//           releaseYear: m.releaseYear, duration: m.duration, language: m.language,
+//           description: m.description, genre: m.genre, photoUrl: m.photoUrl
+//         })
+//       });
+//     } catch (xhr) {
+//       if (xhr.status !== 409) console.warn("seed error:", xhr);
+//     }
+//   }
+// }
 
 function addToWishListById(movieId) {
   const user = getLoggedUser();
@@ -167,23 +167,32 @@ function renderCastList(casts) {
     $c.html("<p>אין שחקנים להצגה.</p>");
     return;
   }
+
   casts.forEach(c => {
     const name  = c.name ?? c.Name;
     const role  = c.role ?? c.Role;
-    const age   = c.age ?? c.Age;
+    const country = c.country ?? c.Country;
+    const dob   = c.dateOfBirth ?? c.DateOfBirth;
     const photo = c.photoUrl ?? c.PhotoUrl;
+
+    let extra = "";
+    if (role)    extra += role;
+    if (country) extra += (extra ? " | " : "") + country;
+    if (dob)     extra += (extra ? " | " : "") + `ת.לידה: ${String(dob).substring(0, 10)}`;
+
     const card = $(`
       <div class="movie-card">
         <img src="${photo || 'https://via.placeholder.com/400x300?text=Cast'}" alt="${name}">
         <div class="info">
           <h3>${name}</h3>
-          <p>${role || ''}${age ? ' | גיל ' + age : ''}</p>
+          <p>${extra}</p>
         </div>
       </div>
     `);
     $c.append(card);
   });
 }
+
 
 function loadCasts() {
   $.get(apiCasts, (data) => renderCastList(data))
@@ -193,37 +202,48 @@ function loadCasts() {
 function validateCastForm() {
   let ok = true;
 
-  $("#errId, #errName, #errRole, #errAge, #errMovieId, #errPhoto").text("");
+  $("#errName, #errRole, #errDob, #errCountry, #errPhoto").text("");
 
-  const id       = Number($("#castId").val());
-  const name     = ($("#castName").val() || "").trim();
-  const role     = ($("#castRole").val() || "").trim();
-  const ageStr   = $("#castAge").val();
-  const movieStr = $("#castMovieId").val();
-  const photo    = ($("#castPhoto").val() || "").trim();
+  const name    = ($("#castName").val() || "").trim();
+  const role    = ($("#castRole").val() || "").trim();
+  const dobStr  = ($("#castDateOfBirth").val() || "").trim();
+  const country = ($("#castCountry").val() || "").trim();
+  const photo   = ($("#castPhoto").val() || "").trim();
 
-  if (!id || id < 1) { $("#errId").text("חובה להזין מזהה חוקי (מעל 0)."); ok = false; }
-  if (name.length < 2) { $("#errName").text("שם חייב להכיל לפחות 2 תווים."); ok = false; }
-  if (role.length < 2) { $("#errRole").text("תפקיד חייב להכיל לפחות 2 תווים."); ok = false; }
-
-  if (ageStr) {
-    const age = Number(ageStr);
-    if (Number.isNaN(age) || age < 0 || age > 120) { $("#errAge").text("גיל בין 0 ל-120."); ok = false; }
+  if (name.length < 2) {
+    $("#errName").text("שם חייב להכיל לפחות 2 תווים.");
+    ok = false;
   }
-  if (movieStr) {
-    const mv = Number(movieStr);
-    if (Number.isNaN(mv) || mv < 1) { $("#errMovieId").text("মזהה סרט חייב להיות מספר > 0."); ok = false; }
+
+  if (role && role.length < 2) {
+    $("#errRole").text("תפקיד (אם מוזן) חייב להכיל לפחות 2 תווים.");
+    ok = false;
   }
+
+  if (country && country.length < 2) {
+    $("#errCountry").text("מדינה (אם מוזנת) חייבת להכיל לפחות 2 תווים.");
+    ok = false;
+  }
+
+  if (dobStr) {
+    const d = new Date(dobStr);
+    if (isNaN(d.getTime())) {
+      $("#errDob").text("תאריך לידה לא תקין.");
+      ok = false;
+    }
+  }
+
   if (photo && !/^https?:\/\//i.test(photo)) {
-    $("#errPhoto").text("יש להזין כתובת URL תקינה (http/https)."); ok = false;
+    $("#errPhoto").text("יש להזין כתובת URL תקינה (http/https).");
+    ok = false;
   }
 
   return ok;
 }
+
 function validateMovieForm() {
   let ok = true;
 
-  // איפוס הודעות שגיאה
   $("#errMovieTitle, #errMovieRating, #errMovieIncome, #errMovieYear, #errMovieDuration, #errMovieLanguage, #errMovieGenre, #errMoviePhoto, #errMovieDescription").text("");
 
   const title       = ($("#movieTitle").val() || "").trim();
@@ -352,12 +372,11 @@ function submitCastForm() {
   if (!validateCastForm()) return;
 
   const payload = {
-    id:       Number($("#castId").val()),
-    name:     ($("#castName").val() || "").trim(),
-    role:     ($("#castRole").val() || "").trim(),
-    age:      $("#castAge").val() ? Number($("#castAge").val()) : 0,
-    movieId:  $("#castMovieId").val() ? Number($("#castMovieId").val()) : 0,
-    photoUrl: ($("#castPhoto").val() || "").trim()
+    name:        ($("#castName").val() || "").trim(),
+    role:        ($("#castRole").val() || "").trim() || null,
+    dateOfBirth: ($("#castDateOfBirth").val() || "").trim() || null,
+    country:     ($("#castCountry").val() || "").trim() || null,
+    photoUrl:    ($("#castPhoto").val() || "").trim() || null
   };
 
   $.ajax({
@@ -366,16 +385,18 @@ function submitCastForm() {
     contentType: "application/json",
     data: JSON.stringify(payload),
     success: () => {
-      alert(" השחקן נוסף בהצלחה!");
+      alert("השחקן נוסף בהצלחה!");
       $("#castForm")[0].reset();
       loadCasts();
     },
     error: (xhr) => {
-      if (xhr.status === 409) alert("שחקן עם אותו Id כבר קיים.");
-      else alert("שגיאה בהוספת שחקן.");
+      console.error("Cast insert error:", xhr.status, xhr.responseText);
+      alert("שגיאה בהוספת שחקן.");
     }
   });
 }
+
+
 
 function saveLoggedUser(user) {
   localStorage.setItem("loggedUser", JSON.stringify(user));
