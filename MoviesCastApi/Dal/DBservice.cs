@@ -1,11 +1,25 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
 
 namespace MoviesCastApi.Dal
 {
     public class DBservice
     {
-        private const string ConnectionString = "Server=shachar\\SQLEXPRESS;Database=MoviesDB;Trusted_Connection=True;TrustServerCertificate=True;";
+        private static readonly string ConnectionString;
+
+        static DBservice()
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
+            IConfiguration config = builder.Build();
+            ConnectionString = config.GetConnectionString("MyConn")
+                               ?? throw new Exception("Connection string 'MyConn' not found in appsettings.json");
+        }
+
         public static SqlConnection Connect()
         {
             SqlConnection con = new SqlConnection(ConnectionString);
