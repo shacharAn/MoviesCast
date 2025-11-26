@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MoviesCastApi.Models;
+using MoviesCastApi.BL;
+
 
 namespace MoviesCastApi.Controllers
 {
@@ -10,30 +12,32 @@ namespace MoviesCastApi.Controllers
         [HttpGet]
         public ActionResult<List<Cast>> GetAll()
         {
-            return Ok(Cast.Read());
+            var list = CastBL.GetAllCast();
+            return Ok(list);
         }
 
         [HttpGet("{id}")]
         public ActionResult<Cast> Get(int id)
         {
-            var list = Cast.Read();
-            var c = list.FirstOrDefault(x => x.Id == id);
+            var list = CastBL.GetAllCast();
+            var cast = list.FirstOrDefault(c => c.Id == id);
+            if (cast == null)
+                return NotFound();
 
-            if (c == null) return NotFound();
-            return Ok(c);
+            return Ok(cast);
         }
-
         [HttpPost]
         public ActionResult Create([FromBody] Cast cast)
         {
             if (cast == null)
                 return BadRequest("Cast payload is required.");
 
-            var ok = cast.Insert();
-            if (!ok)
-                return Conflict($"Could not insert cast record.");
+            if (string.IsNullOrWhiteSpace(cast.Name))
+                return BadRequest("Name is required.");
 
-            return Created($"/api/casts/{cast.Id}", cast);
+            var inserted = CastBL.InsertCast(cast);
+
+            return Created($"/api/casts/{inserted.Id}", inserted);
         }
     }
 }

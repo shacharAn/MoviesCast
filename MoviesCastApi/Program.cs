@@ -21,8 +21,6 @@ namespace MoviesCastApi
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            MoviesCastApi.Models.Dal.Init(builder.Configuration);
-
             var app = builder.Build();
 
             app.UseSwagger();

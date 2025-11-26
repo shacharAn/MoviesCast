@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using MoviesCastApi.BL;
 using MoviesCastApi.Models;
 
 namespace MoviesCastApi.Controllers
@@ -7,74 +8,41 @@ namespace MoviesCastApi.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        public class RegisterDto
+        [HttpPost("register")]
+        public ActionResult<User> Register([FromBody] User user)
         {
-            public string UserName { get; set; }
-            public string Email    { get; set; }
-            public string Password { get; set; }
+            if (user == null)
+                return BadRequest("User payload is required.");
+
+            try
+            {
+                var registered = UsersBL.Register(user);
+                return Created($"/api/users/{registered.Id}", registered);
+            }
+            catch (Exception ex)
+            {
+                return Conflict(ex.Message);
+            }
         }
 
         public class LoginDto
         {
-            public string Email    { get; set; }
+            public string Email { get; set; }
             public string Password { get; set; }
         }
 
-        // POST: api/users/register
-        [HttpPost("register")]
-        public ActionResult Register([FromBody] RegisterDto dto)
-        {
-            if (dto == null ||
-                string.IsNullOrWhiteSpace(dto.UserName) ||
-                string.IsNullOrWhiteSpace(dto.Email) ||
-                string.IsNullOrWhiteSpace(dto.Password))
-            {
-                return BadRequest("All fields are required.");
-            }
-
-            var user = new MoviesCastApi.Models.User
-            {
-                UserName = dto.UserName.Trim(),
-                Email    = dto.Email.Trim(),
-                Password = dto.Password
-            };
-
-            var ok = user.Register();
-            if (!ok)
-            {
-                return Conflict("User with this email already exists.");
-            }
-
-            return Created($"/api/users/{user.Id}", new
-            {
-                user.Id,
-                user.UserName,
-                user.Email
-            });
-        }
-
         [HttpPost("login")]
-        public ActionResult Login([FromBody] LoginDto dto)
+        public ActionResult<User> Login([FromBody] LoginDto dto)
         {
-            if (dto == null ||
-                string.IsNullOrWhiteSpace(dto.Email) ||
-                string.IsNullOrWhiteSpace(dto.Password))
-            {
-                return BadRequest("Email and password are required.");
-            }
+            if (dto == null)
+                return BadRequest("Login payload is required.");
 
-            var user = MoviesCastApi.Models.User.Login(dto.Email, dto.Password);
+            var user = UsersBL.Login(dto.Email, dto.Password);
+
             if (user == null)
-            {
                 return Unauthorized("Invalid email or password.");
-            }
 
-            return Ok(new
-            {
-                user.Id,
-                user.UserName,
-                user.Email
-            });
+            return Ok(user);
         }
     }
 }
